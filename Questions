@@ -8,3 +8,41 @@ but not the following
 
 '12,34,567' (which has only two digits between the commas)
 '1234' (which lacks commas)
+
+
+2.	Write a regex that matches the full name of someone who last name is Nakamoto. You can assume that the first name that comes before it will always be one word that begins with a capital letter. The regex must match the following:
+
+‘Satoshi Nakamoto’
+‘Alice Nakamoto’
+‘RoboCop Nakamoto’
+
+But no the following
+‘satohshi Nakamoto’ (where the first name is not capitalized)
+‘Mr. Nakamoto’ (where the preceding word has a nonletter character)
+‘Nakamoto’ (which has no first name)
+‘Satoshi nakamoto’ (where Nakamoto is not capitalized)
+
+
+REGEX
+
+/d 
+any digit from 0-9
+
+* 
+regex that matches a number with
+
+$
+string must end with this regex pattern
+
+^ and $
+match entire string
+
++ 
+1 or more
+
+*
+0 or more
+
+[a-zA-Z0-9]
+will match all lowercase letters and numbers
+
